@@ -198,6 +198,7 @@ function toggleMusic() {
     return;
   }
   if (audio.paused) {
+  audio.volume = 0.2;
     audio.play();
     btn.classList.add('playing');
     lbl.textContent = 'Playing';
